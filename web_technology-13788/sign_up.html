@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in and Sign up Form</title>
+  <link rel="stylesheet" href="sign_up.css">
+  <script src="https://kit.fontawesome.com/430fbcef18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Main header begins-->
+
+  <div class="container">
+    <header class="main-header">
+      
+      <div class="main-header-brand">
+        <a href="index.html">
+          <img src="./images/Pahtakor_logo.png" alt="logo">
+        </a>
+  
+  
+      </div>
+      <nav class="main-navigation">
+        <ul class="main-navigation-items">
+          <li class="main-navigation-item">
+            <a href="./index.html">HOME</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="./about_pax.html">ABOUT</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="./shop.html">SHOP</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="./award.html">AWARDS</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+          <li class="main-navigation-item  active">
+            <a href="./sign_up.html">SIGN UP</a>
+          </li>
+          
+  
+        </ul>
+  
+      </nav>
+    
+  </header>
+   </div>
+
+ <!-- Main header ends-->
+
+ <!-- Sign up form begins-->
+
+<div class="containerr">
+  <div class="form-box">
+    <h1 id="title">Sign up</h1>
+    <form>
+      <div class="input-group">
+        <div class="input-field" id="nameField">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Name">
+        </div>
+         
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        
+        <div class="input-field">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password">
+        </div>
+        <p>Lost password <a href="#">Click here!</a></p>
+      </div>
+      <div class="btn-field">
+        <button type="button" id="signupBtn">Sign up</button>
+        <button type="button" id="signinBtn" class="disable">Sign in</button>
+      </div>
+    </form>
+  </div>
+  
+</div>
+
+<!-- Sign up form ends-->
+
+  <!-- footer begins -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="./images/Pahtakor_logo.png" alt="logo">
+      
+      </div>
+      <nav class="footer-navigation">
+      <ul class="footer-navigation-items">
+        <li class="footer-navigation-item">
+          <a href="./index.html">HOME</a>
+        </li>
+        <li class="footer-navigation-item">
+          <a href="./about.html">ABOUT</a>
+        </li>
+        <li class="footer-navigation-item">
+          <a href="./shop.html">SHOP</a>
+        </li>
+        <li class="footer-navigation-item">
+          <a href="./award.html">AWARDS</a>
+        </li>
+        <li class="footer-navigation-item">
+          <a href="./contact.html">CONTACT</a>
+        </li>
+        <li class="footer-navigation-item">
+          <a href="./sign_up.html">SIGN UP</a>
+        </li>
+      </ul>
+    
+      </nav>
+      <ul class="footer-socials">
+        <li class="footer-social">
+          <a href="#">
+            <i class="fab fa-telegram"></i>
+          </a>
+        </li>
+        <li class="footer-social">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footer-social">
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        
+      </ul>
+      <p class="footer-text">This website was created to fulfil Web Technology
+        modules requirements and does not represent an actual company or service</p>
+    </div>
+  </footer>
+  <!-- /footer ends-->
+
+<!--  Javasript for sign up form begins-->
+
+<script>
+
+    let signupBtn = document.getElementById("signupBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let nameField = document.getElementById("nameField");
+    let title = document.getElementById("title");
+
+    signinBtn.onclick = function(){
+      nameField.style.maxHeight = "0";
+      title.innerHTML = "Sign In";
+      signupBtn.classList.add("disable");
+      signinBtn.classList.remove("disable");
+    }
+
+    signupBtn.onclick = function(){
+      nameField.style.maxHeight = "60px";
+      title.innerHTML = "Sign Up";
+      signupBtn.classList.remove("disable");
+      signinBtn.classList.add("disable");
+    }
+    
+
+</script>
+
+<!--  Javasript for sign up form ends-->
+
+
+</body>
+</html>

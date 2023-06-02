@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.body{
+  font-family: sans-serif;
+  background-color: #e1eff5;
+}
+
+
+.section-title {
+  margin-top: 5px;
+  font-size: 42px;
+  font-weight:700 ;
+  text-transform: capitalize;
+  color: #05364d;
+  
+}
+
+.section-subtitle {
+   letter-spacing: 2px;
+   font-weight: 500;
+   margin-bottom: 10px;
+   color: #797979;
+   text-transform: uppercase;
+ }
+
+
+*/
+.container {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* header starts*/ 
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+  z-index: 10;
+}
+
+.main-header-brand {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.main-header-brand img{
+  padding-right: 15px;
+  width: 64px;
+}
+
+.main-navigation {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+
+.main-navigation {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+.navBarStyle {
+  display: inline-block;
+  padding: 10px;
+  
+}
+
+.navBarStyle a {
+  color: #7a7575;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navBarStyle a:hover {
+  color:#00acfa;
+}
+
+.navBarStyle.active a{
+  color:#f3aa27;
+}
+
+
+
+.navBarStyle a:hover {
+  color: #0f7f8e;
+}
+
+.hero {
+  background-color: #0f7f8e;
+  width: 1338px;
+  height: 242px;
+}
+
+.position {
+  position: relative;
+}
+
+
+.article {
+  
+  margin-left: 123px;
+  margin-top: 181px;
+  margin-bottom: 77px;
+  background-image: url(./images/main-banner.webp) no-repeat top center;
+ /* background-position: center;
+  background-size: cover;*/
+}
+
+.article h1 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.article p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 77px;
+  column-gap: 30px;
+  margin-left: 80px;
+  margin-bottom: 154px;
+}
+
+.shopCard {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  border: 2px solid #0f7f8e;
+  width: 391px;
+  height: 445px;
+  padding: 42px 50px 64px 50px;
+}
+
+.shopCard {
+  background-color: #f8faff;
+  /*padding: 30px;*/
+  color: #797979
+}
+
+.shopCard:hover {
+  background-color: white;
+}
+
+.Clothing {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.ClothingAbout {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 23px;
+  width: 292.83px;
+}
+
+.shopCard img {
+  width: 297.03px;
+  height: 158.32px;
+  background-size: cover;
+}
+
+.shopCard:hover {
+  box-shadow: 0px 10px 20px rgb(5 54 77 / 10%);
+}
+
+
+  .view {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #05364d;
+  font-weight: 700;
+}
+
+.blur-line {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  margin-left:5px;
+  width: 80px;
+  height: 4px;
+  background-color: #d4ff00;
+  filter: blur(4px);
+  border-radius: 4px;
+}
+
+.Clothing {
+  font-size: 25px;
+  
+  color: #05364d;
+  font-weight: 700;
+}
+
+
+.view:hover {
+  color: #eceb09;
+}
+
+
+.footer{
+  padding: 100px 0;
+  margin-top:50px;
+  background-color:#021017;
+  text-align:center;
+}
+
+.footer-brand img{
+  width:128px;
+}
+
+.footer-navigation-items{
+  margin-bottom:50px;
+}
+
+.footer-navigation-item{
+  display:inline-block;
+  padding:0 10px;
+}
+
+.footer-navigation-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-socials {
+  list-style: none;
+}
+
+.footer-social{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 36px;
+  color: #05364d;
+  font-size: 1rem;
+  margin-right: 12px;
+}
+
+.footer-social a{
+  color:#021017;
+}
+
+.footer-social:hover {
+  background: linear-gradient(90deg,  #ffff00 0%, #00acfa 51%);
+}
+
+.footer-social:hover i {
+  color:white;
+}
+
+.footer-text{
+  color:#ededee;
+}
+
+
