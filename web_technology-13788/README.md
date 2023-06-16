@@ -16,3 +16,5 @@ JavaScript is only in the last of the website 'Sign up' page. Only in one page, 
 # Link to gitHub
 https://github.com/000013788/web-technology-cw1_13788.git
 
+https://000013788.github.io/web-technology-cw1_13788/
+
